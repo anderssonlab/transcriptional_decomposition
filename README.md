@@ -28,6 +28,6 @@ Implements the boundary finding algorithm (see methods in the paper, and/or illu
 
 Generates a dataframe of all intrachrosomal bin-bin pairs within (default) 2MB, each with annotated expression parameters (see paper supplementary for list) and interaction significance scores measured for GM12878 CaptureHIC (Mifsud et al 2015) using CHiCAGO (Cairns et al 2016).
 
-5. predict_interactions_on_ENCODE.R - script which takes annotated bin-bin pairs, models against GM12878 interaction counts via a random forest, and predicts on other ENCODE cell lines
+5. predict_interactions_on_ENCODE.R - script which takes annotated bin-bin pairs, models against GM12878 interaction counts via a random forest, and predicts on other ENCODE cell lines.
 
-6. [not added yet] DE_Hela_GM12878.R - transcriptional decomposition script to include posterior estimates of the difference between two cell lines
+This script requires a data.frame of bin-bin pairs for the training cell type (in our case GM12878) together with which pairs are positives (interactions) and negatives, and for the test cell types. The list of bin-bin pairs should be annotated by the training variables, such as distance between bins, expression levels, PD value, PI value, etc. We then downsample our negatives and upsample our positives to achieve a 1-1 ratio, train using a random forest and predict on our test cell types, repeated and averaged across 10 rounds.
