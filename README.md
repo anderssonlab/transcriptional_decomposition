@@ -1,6 +1,6 @@
 # transcriptional_decomposition
 
-This README is a guide to the R scripts included with our manuscript entitled "Transcriptional decomposition reveals active chromatin architectures and cell specific regulatory interactions". Further questions regarding code should be made to sarah@binf.ku.dk or robin@binf.ku.dk.
+This README is a guide to the R scripts included with our manuscript entitled "Transcriptional decomposition reveals active chromatin architectures and cell specific regulatory interactions" (https://doi.org/10.1101/130070). Further questions regarding code should be made to sarah@binf.ku.dk or robin@binf.ku.dk.
 
 1. transcriptional_decomposition.R - script for getting from raw CTSS CAGE samples to decomposed PD/PI components
 
